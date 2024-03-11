@@ -1,0 +1,10 @@
+count=0;
+name=input("Enter the file name");
+sen=input("Enter the text to write to the file");
+file1=open(name,'w');
+file1.write(sen);
+file1.close();
+file2=open(name,'r');
+text=file2.read();
+count=len(text.split());
+print("Number of words : ",count);
